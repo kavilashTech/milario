@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milario - Coming Soon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #f6f6f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .container-box {
+            max-width: 600px;
+        }
+        img {
+            max-width: 300px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 25px;
+        }
+    </style>
+    <style>
+        body {
+            background: #f6f6f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        .container-box {
+            max-width: 600px;
+            transform: translateY(30px);
+            animation: slideUp 1.5s ease forwards 0.5s;
+        }
+        img {
+            max-width: 300px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #444;
+            margin-bottom: 25px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-box">
+        <img src="https://images.unsplash.com/photo-1552637086-ce3bf3275c4c" alt="Millets Image" />
+        <h1>Milario</h1>
+        <p class="tagline">Ancient Grains, Modern Food</p>
+        <h3>We are launching soon!</h3>
+        <p>Millet-based food products crafted for a healthier lifestyle.</p>
+    </div>
+</body>
+</html>
