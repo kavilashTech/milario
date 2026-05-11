@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Millet Recipe Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .recipe-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .search-bar {
+            max-width: 500px;
+        }
+
+        .filter-button {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <section class="py-5 text-center bg-light mb-4">
+        <div class="container">
+            <h1 class="fw-bold">Millet Recipes</h1>
+            <p class="text-muted">Discover delicious dishes using ancient grains - Millets.</p>
+
+            <!-- Search Bar -->
+            <div class="mx-auto search-bar">
+                <input type="text" class="form-control" id="searchInput" placeholder="Search recipes...">
+            </div>
+
+            <!-- Filters -->
+            <div class="mt-3">
+                <button class="btn btn-outline-primary filter-button" onclick="filterRecipes('all')">All</button>
+                <button class="btn btn-outline-secondary filter-button"
+                    onclick="filterRecipes('breakfast')">Breakfast</button>
+                <button class="btn btn-outline-success filter-button" onclick="filterRecipes('lunch')">Lunch</button>
+                <button class="btn btn-outline-danger filter-button" onclick="filterRecipes('dinner')">Dinner</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Grid -->
+    <div class="container pb-5">
+        <div class="row g-4" id="recipeGrid">
+            <!-- Sample Recipe Card 1 -->
+            <div class="col-md-4 recipe-card" data-category="breakfast">
+                <div class="card shadow-sm">
+
+                    <!-- Example update for one card: -->
+                    <a href="recipe-detail.html" style="text-decoration:none; color:inherit;">
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d" class="card-img-top"
+                                alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Healthy Millet Pancakes</h5>
+                                <p class="card-text">Fluffy, nutritious, and perfect for breakfast.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sample Recipe Card 2 -->
+            <div class="col-md-4 recipe-card" data-category="lunch">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" class="card-img-top"
+                        alt="Recipe Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Millet Veg Bowl</h5>
+                        <p class="card-text">A wholesome and colorful lunch option.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sample Recipe Card 3 -->
+            <div class="col-md-4 recipe-card" data-category="dinner">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" class="card-img-top"
+                        alt="Recipe Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Millet Stir-Fry</h5>
+                        <p class="card-text">A tasty and light dinner option.</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Sample Recipe Card 1 -->
+            <div class="col-md-4 recipe-card" data-category="breakfast">
+                <div class="card shadow-sm">
+
+                    <!-- Example update for one card: -->
+                    <a href="recipe-detail.html" style="text-decoration:none; color:inherit;">
+                        <div class="card shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d" class="card-img-top"
+                                alt="Recipe Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Healthy Millet Pancakes</h5>
+                                <p class="card-text">Fluffy, nutritious, and perfect for breakfast.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sample Recipe Card 2 -->
+            <div class="col-md-4 recipe-card" data-category="lunch">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" class="card-img-top"
+                        alt="Recipe Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Millet Veg Bowl</h5>
+                        <p class="card-text">A wholesome and colorful lunch option.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sample Recipe Card 3 -->
+            <div class="col-md-4 recipe-card" data-category="dinner">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" class="card-img-top"
+                        alt="Recipe Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Millet Stir-Fry</h5>
+                        <p class="card-text">A tasty and light dinner option.</p>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+        <!-- Pagination -->
+        <nav class="mt-4">
+            <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+    </div>
+
+    <script>
+        const cardsPerPage = 6;
+        let currentPage = 1;
+
+        function renderPagination() {
+            const cards = document.querySelectorAll('#recipeGrid .recipe-card:not([style*="display: none"])');
+            const totalPages = Math.ceil(cards.length / cardsPerPage);
+            const pagination = document.getElementById('pagination');
+            pagination.innerHTML = '';
+
+            for (let i = 1; i <= totalPages; i++) {
+                const li = document.createElement('li');
+                li.className = 'page-item ' + (i === currentPage ? 'active' : '');
+                li.innerHTML = `<a class='page-link' href='#'>${i}</a>`;
+                li.addEventListener('click', () => {
+                    currentPage = i;
+                    displayPage();
+                });
+                pagination.appendChild(li);
+            }
+        }
+
+        function displayPage() {
+            const cards = document.querySelectorAll('#recipeGrid .recipe-card');
+            const visibleCards = Array.from(cards).filter(card => card.style.display !== 'none');
+
+            // First hide all cards
+            cards.forEach(card => card.style.display = 'none');
+
+            // Then show only the ones for the current page
+            visibleCards.forEach((card, index) => {
+                card.style.display = (index >= (currentPage - 1) * cardsPerPage && index < currentPage * cardsPerPage) ? 'block' : 'none' ? 'block' : 'none';
+            });
+
+            renderPagination();
+        }
+
+        // Search Functionality
+        document.getElementById('searchInput').addEventListener('keyup', function () {
+            let value = this.value.toLowerCase();
+            let cards = document.querySelectorAll('#recipeGrid .recipe-card');
+
+            cards.forEach(card => {
+                let title = card.querySelector('.card-title').innerText.toLowerCase();
+                card.style.display = title.includes(value) ? 'block' : 'none';
+            });
+
+            currentPage = 1;
+            displayPage();
+        });
+
+        // Filter Functionality
+        function filterRecipes(category) {
+            let cards = document.querySelectorAll('#recipeGrid .recipe-card');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            currentPage = 1;
+            displayPage();
+        }
+
+        // Initialize
+        displayPage();
+    </script>
+
+</body>
+
+</html>
