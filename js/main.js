@@ -63,20 +63,53 @@ function w3RemoveClass(element, name) {
             } else {
                 $('.fixed-top').removeClass('shadow').css('top', 0);
             }
-        } 
+        }
     });
-    
-    
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
+
+    //header carousel 
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,        // Infinity Loop
+            margin: 10,      // Margin between items
+            nav: true,         // Show next/prev buttons
+            responsive: {      // Responsive settings
+                0: { items: 1 },
+                600: { items: 3 },
+                1000: { items: 5 }
+            }
+        });
+        //home slider
+        // $(".home-slider").owlCarousel({
+        //     loop: true,        // Infinity Loop
+        //     autoplay:true,
+        //     margin: 10,      // Margin between items
+        //     nav: true,         // Show next/prev buttons
+        //     autoplayHoverPause:true,
+        //     items:1,
+        //     animateOut:'fadeOut',
+        //     animateIn:'fadeIn',
+        //     navText:["<span class = 'fa fa-chevron-left'></span>","<span class = 'fa fa-chevron-right'></span>"],
+        //     responsive: {      // Responsive settings
+        //         0: { items: 1, nav:false },
+        //         600: { items: 3, nav:false },
+        //         1000: { items: 5,nav:true }
+        //     }
+        // });
+    });
+
+
+
+
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -89,27 +122,27 @@ function w3RemoveClass(element, name) {
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:1
+            768: {
+                items: 1
             },
-            992:{
-                items:2
+            992: {
+                items: 2
             },
-            1200:{
-                items:2
+            1200: {
+                items: 2
             }
         }
     });
@@ -123,27 +156,27 @@ function w3RemoveClass(element, name) {
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             },
-            1200:{
-                items:4
+            1200: {
+                items: 4
             }
         }
     });
