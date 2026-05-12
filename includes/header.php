@@ -96,7 +96,11 @@
 
                         </ul>
                     </div>
-                </div>
+                    <div class="d-flex m-3 me-0">
+                        <a href="#" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
             </nav>
         </header>
     </div>
