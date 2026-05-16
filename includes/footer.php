@@ -5,7 +5,7 @@
             <div class="row g-4">
                 <div class="col-lg-3">
                     <a href="#">
-                        <h1 class="text-primary mb-0">Millesto</h1>
+                        <h1 class="text-primary mb-0">Milario</h1>
                         <p class="text-secondary mb-0">Wholesome Feasts, Junk free Treats!</p>
                     </a>
                 </div>
@@ -75,7 +75,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Millesto</a>, All right reserved.</span>
+                <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Milario</a>, All right reserved.</span>
             </div>
             <div class="col-md-6 my-auto text-center text-md-end text-white">
                 <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->

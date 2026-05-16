@@ -21,13 +21,13 @@ include "includes/header.php";
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <!-- <i class="bi bi-exclamation-triangle display-1 text-secondary"></i> -->
-                        <!-- <h1 class="display-1">About Millesto</h1> -->
-                        <h1 class="mb-4">Welcome to Millesto<br><span style="font-size:18pt;">Your Destination for Nutritious Millet Delights</span></h1>
+                        <!-- <h1 class="display-1">About Milario</h1> -->
+                        <h1 class="mb-4">Welcome to Milario<br><span style="font-size:18pt;">Your Destination for Nutritious Millet Delights</span></h1>
                         <p class="mb-4" style="text-align: justify;">Privacy Policy
 
 Last Updated: [Insert Date]
 
-PACS International ("Millesto," "we," "us," or "our") is committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information in accordance with the Australian Privacy Principles (APPs) under the Privacy Act 1988 (Cth).
+PACS International ("Milario," "we," "us," or "our") is committed to protecting your privacy and ensuring that your personal information is handled in a safe and responsible manner. This Privacy Policy outlines how we collect, use, disclose, and protect your personal information in accordance with the Australian Privacy Principles (APPs) under the Privacy Act 1988 (Cth).
 
 <h1 class="mb-4" style="font-size:18pt;">1. Collection of Personal Information</h1>
 
