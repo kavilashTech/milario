@@ -174,7 +174,7 @@ include "includes/header.php";
 			<!-- begin post -->
 			<div class="card">
 				<a href="post.php">
-					<img class="img-fluid" src="assets/img/demopic/5.jpg" alt="">
+					<img class="img-fluid" src="assets/img/demopic/6.jpg" alt="">
 				</a>
 				<div class="card-block">
 					<h2 class="card-title"><a href="post.php">All time food from the same grains. Do you know?</a></h2>
