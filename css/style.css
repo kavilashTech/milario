@@ -276,111 +276,6 @@ header .navbar .nav-item:hover .dropdown-menu {
 
 /*** Navbar End ***/
 
-/** Home Carousel **/
-
-/* .home-sl .section {
-    padding: 7em 0;
-}
-
-.home-sl  .owl-carousel .owl-item {
-    opacity: .4;
-}
-
-.home-sl  .owl-carousel .owl-item.active {
-    opacity: 1;
-}
-
-.home-sl  .owl-carousel .owl-nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-}
-
-.home-sl .owl-carousel .owl-nav .owl-prev,
-.home-sl .owl-carousel .owl-nav .owl-next {
-    position: absolute;
-    margin-top: 10px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.home-sl .owl-carousel .owl-nav .owl-prev:hover,
-.home-sl .owl-carousel .owl-nav .owl-prev:focus,
-.home-sl .owl-carousel .owl-nav .owl-prev:active,
-.home-sl .owl-carousel .owl-nav .owl-next:hover,
-.home-sl .owl-carousel .owl-nav .owl-next:focus,
-.home-sl .owl-carousel .owl-nav .owl-next:active {
-    outline: none;
-}
-
-.home-sl .owl-carousel .owl-nav .owl-prev span:before,
-.home-sl .owl-carousel .owl-nav .owl-next span:before {
-    font-size: 40px;
-}
-
-.home-sl .owl-carousel .owl-nav .owl-prev {
-    left: 30px !important;
-}
-
-.home-sl .owl-carousel .owl-nav .owl-prev {
-    right: 30px !important;
-}
-
-.home-sl .owl-carousel .owl-dots {
-    text-align: center;
-}
-
-.home-sl .owl-carousel .owl-dots .owl-dot {
- width: 10px;   
- height:10px;
- margin:5px;
- border-radius: 50%;
- background:#e6e6e6;
-
-}
-
-.home-sl .owl-carousel .owl-dots .owl-dot.active{
-    background:#006633;
-}
-
-.home-sl .owl-carousel.home-slider{
-    z-index: 1;
-    position:relative;
-}
-
-.home-sl .owl-carousel.owl-carousel.home-slider .owl-nav {
-    opacity:0;
-    visibility:hidden;
-    -webkit-transition: .3s all ease;
-    -o-transition: .3s all ease;
-    transition: .3s all ease;
-}
-.home-sl .owl-carousel.owl-carousel.home-slider .owl-nav-button {
-    color:#fff;
-}
-
-.home-sl .owl-carousel.owl-carousel.home-slider:focus .owl-nav,
-.home-sl .owl-carousel.owl-carousel.home-slider:active .owl-nav {
-    opacity: 1;
-    visibility: visible;
-}
-
-.home-sl .owl-carousel.owl-carousel.home-slider .slider-item {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height:calc(100vh-117px);
-    min-height:700px;
-    position:relative;
-} */
-
-
-/** End Home Carousel **/
-
-
-
-
 
 /*** Hero Header ***/
 /* .hero-header {
@@ -393,12 +288,13 @@ header .navbar .nav-item:hover .dropdown-menu {
 .carousel-inner {
     margin-left: auto;
     margin-right: auto;
-    /* object-fit: cover; */
+    object-fit: cover;
+    overflow:visible;
 }
 .carousel-item {
-    position: relative;
-    height:80vh;
-    /* object-fit: cover; */
+    top: 10vh;
+    height:100%;
+    object-fit:cover;
 }
 
 .carousel-item a {
@@ -411,14 +307,31 @@ header .navbar .nav-item:hover .dropdown-menu {
     /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
 }
 
-.carousel-item .cap01 {
+/* .carousel-item .cap01 {
     position: relative;
+} */
+
+.carousel .slide {
+    border : 1px red solid;
 }
 
 .carousel-item .cap01 {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 11%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    Color: Orange;
+    border-radius: 5px;
+    padding: 4px 20px;
+    background-color: #ffffff;
+    /* background: linear-gradient(rgba(255, 181, 36, 0.7), rgba(255, 181, 36, 0.7)); */
+}
+.carousel-item .cap02 {
+    position: absolute;
+    text-align: left;
+    top: 70%;
+    left: 18%;
     transform: translate(-50%, -50%);
     font-size: 36px;
     Color: Orange;

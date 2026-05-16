@@ -2,95 +2,27 @@
 include "includes/header.php";
 ?>
 
-<!-- <div class="home-sl">
-    <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image:url('img/slider/slide_1.jpg');">
-            <div class="container">
-                <div class="row slider-text align-items-center">
-                    <div class="col-md-6 col-sm-12">
-                        <span class="title cursive">Good and adorable Dog</span>
-                        <h1>Needs a caring Parent</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="slider-item" style="background-image:url('img/slider/slide_2.jpg');">
-            <div class="container">
-                <div class="row slider-text align-items-center">
-                    <div class="col-md-6 col-sm-12">
-                        <span class="title cursive">Good and adorable Dog 3 years old</span>
-                        <h1>Needs a adorable Parent</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <p><a href="#" class="btn btn-primary">Learn More</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-</div> -->
-
-
-
-<!-- <div class="owl-carousel py-5 mb-5">
-    <div class="item">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-12 slider-content-col align-self-center">
-                <div class="carousel-caption">
-                    <div class="inner_carousel">
-                        <p class="slidetop-text mb-2">2500+ Fresh Products</p>
-                        <h1 class="mb-2">
-                            <a href="#" class="text-capitalize">Order Tasty Fruits and Get Free Delivery!</a>
-                        </h1>
-                        <div class="more-btn mt-4">
-                            <a href="#" class="text-capitalize me-lg-4 me-md-3 me-2 mb-3 slider-btn1">Explore Shop<i class="fas fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-12 slider-img-col align-self-center">
-                <img src="img/slider/slide_1.jpg" alt="Order Tasty Fruits and Get Free Delivery!" />
-            </div>
-        </div> -->
-<!-- Add more items as needed -->
-<!-- </div>
-</div> -->
-
 <!-- Hero Start -->
 <div class="container-fluid py-5 mb-5 ">
-    <div class="container-fluid py-5">
-        <div class="row g-5 align-items-center">
+    <div class="container py-5">
+        <div class="row g-1 align-items-center">
 
             <div class="col-md-12 col-lg-12">
                 <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
 
-                        <div class="carousel-item active rounded">
-                            <img src="img/slider/slide_1.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                            <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
-                            <p class="cap01">Millet Noodles</p>
+
+                        <div class="carousel-item active rounded mx-auto">
+                            <img src="img/slider/slide_1.png" class="img-fluid w-100 h-100 rounded  mx-auto" alt="Second slide">
+                            <!-- <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
+                            <p class="cap01">Millet Noodles</p> -->
                         </div>
-                        <div class="carousel-item rounded">
-                            <img src="img/slider/slide_2.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                            <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
-                            <p class="cap01">Millet Noodles</p>
+                        <div class="carousel-item rounded mx-auto">
+                            <img src="img/slider/slide_2.png" class="img-fluid w-100 h-100 rounded mx-auto" alt="Second slide">
+                            <!-- <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
+                            <p class="cap01">Millet Crunchies</p> -->
                         </div>
-                        <div class="carousel-item rounded">
-                            <img src="img/slider/slide_4.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                            <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
-                            <p class="cap01">Millet Crunchies</p>
-                        </div>
-                        <div class="carousel-item rounded">
-                            <img src="img/slider/slide_3.jpg" class="img-fluid w-100 h-100 rounded" alt="Second slide">
-                            <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
-                            <p class="cap01">Millet Grains</p>
-                        </div>
+
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -106,6 +38,9 @@ include "includes/header.php";
     </div>
 </div>
 <!-- Hero End -->
+
+
+
 
 
 <!-- Featurs Section Start -->
