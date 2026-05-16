@@ -3,24 +3,56 @@ include "includes/header.php";
 ?>
 
 <!-- Hero Start -->
-<div class="container-fluid py-5 mb-5 ">
-    <div class="container py-5">
+
+<!-- -----------Temp Start --------------- -->
+<div class="container home-slider-1">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slider/slide_1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider/slide_2.png" alt="Second slide">
+            </div>
+            <!-- <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Third slide">
+        </div> -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+
+<!-- --------Temp End -------------- -->
+<!-- <div class="container mb-5 ">
+    <div class="container-fluid py-5">
         <div class="row g-1 align-items-center">
 
             <div class="col-md-12 col-lg-12">
-                <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
+                <div id="carouselId" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
-
-
                         <div class="carousel-item active rounded mx-auto">
-                            <img src="img/slider/slide_1.png" class="img-fluid w-100 h-100 rounded  mx-auto" alt="Second slide">
-                            <!-- <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
-                            <p class="cap01">Millet Noodles</p> -->
+                            <img src="img/slider/slide_1.png" class="d-block w-100" alt="Second slide">
+                            <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
+                            <p class="cap01">Millet Noodles</p>
                         </div>
                         <div class="carousel-item rounded mx-auto">
-                            <img src="img/slider/slide_2.png" class="img-fluid w-100 h-100 rounded mx-auto" alt="Second slide">
-                            <!-- <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
-                            <p class="cap01">Millet Crunchies</p> -->
+                            <img src="img/slider/slide_2.png" class="d-block w-100" alt="Second slide">
+                            <a href="#" class="btn px-4 py-2 text-white rounded">Details...</a>
+                            <p class="cap01">Millet Crunchies</p>
                         </div>
 
                     </div>
@@ -36,7 +68,7 @@ include "includes/header.php";
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Hero End -->
 
 
