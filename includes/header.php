@@ -96,7 +96,7 @@
                             </li>
                             <li class="nav-item"><a class="nav-link" href="404.php" class="nav-item nav-link">B2B</a></li>
                             <li class="nav-item"><a class="nav-link" href="blog.php" class="nav-item nav-link">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="404.php" class="nav-item nav-link">Recipes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="recipe.php" class="nav-item nav-link">Recipes</a></li>
 
                         </ul>
                     </div>

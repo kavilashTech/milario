@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<?php
+include "includes/header.php";
+?>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Millet Recipe Collection</title>
@@ -26,7 +26,7 @@
     </style>
 </head>
 
-<body>
+<body> -->
 
     <!-- Header Section -->
     <section class="py-5 text-center bg-light mb-4">
@@ -46,6 +46,7 @@
                     onclick="filterRecipes('breakfast')">Breakfast</button>
                 <button class="btn btn-outline-success filter-button" onclick="filterRecipes('lunch')">Lunch</button>
                 <button class="btn btn-outline-danger filter-button" onclick="filterRecipes('dinner')">Dinner</button>
+                <button class="btn btn-outline-danger filter-button" onclick="filterRecipes('snack')">Snack</button>
             </div>
         </div>
     </section>
@@ -60,11 +61,11 @@
                     <!-- Example update for one card: -->
                     <a href="recipe-detail.html" style="text-decoration:none; color:inherit;">
                         <div class="card shadow-sm">
-                            <img src="https://images.unsplash.com/photo-1506089676908-3592f7389d4d" class="card-img-top"
+                            <img src="img/recipes/fruit_muesli.jpg" class="card-img-top"
                                 alt="Recipe Image">
                             <div class="card-body">
-                                <h5 class="card-title">Healthy Millet Pancakes</h5>
-                                <p class="card-text">Fluffy, nutritious, and perfect for breakfast.</p>
+                                <h5 class="card-title">Breakfast Muesli - Mixed Fruit & Nuts</h5>
+                                <p class="card-text">Highly Nutritious and delicious Breakfast</p>
                             </div>
                         </div>
                     </a>
@@ -74,11 +75,11 @@
             <!-- Sample Recipe Card 2 -->
             <div class="col-md-4 recipe-card" data-category="lunch">
                 <div class="card shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" class="card-img-top"
+                    <img src="img/recipes/choco_muesli.jpg" class="card-img-top"
                         alt="Recipe Image">
                     <div class="card-body">
-                        <h5 class="card-title">Millet Veg Bowl</h5>
-                        <p class="card-text">A wholesome and colorful lunch option.</p>
+                        <h5 class="card-title">Millet Chocolate Muesli</h5>
+                        <p class="card-text">Real Chocolate with Millets, nuts & Seeds</p>
                     </div>
                 </div>
             </div>
@@ -216,6 +217,6 @@
         displayPage();
     </script>
 
-</body>
-
-</html>
+<?php
+include "includes/footer.php";
+?>

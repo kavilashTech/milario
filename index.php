@@ -131,8 +131,8 @@ include "includes/header.php";
 <!-- Featurs Section End -->
 
 <!-- Vesitable Shop Start-->
-<div class="container-fluid vesitable py-5">
-    <div class="container py-5">
+<div class="container-fluid vesitable">
+    <div class="container">
         <h1 class="mb-0">Nutritious Millet Products</h1>
         <div class="owl-carousel vegetable-carousel justify-content-center">
             <div class="border border-primary rounded position-relative vesitable-item">
@@ -179,12 +179,12 @@ include "includes/header.php";
             </div>
             <div class="border border-primary rounded position-relative vesitable-item">
                 <div class="vesitable-img">
-                    <img src="img/kodo-millet-grain.jpg" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="img/home/vermicelli.jpg" class="img-fluid w-100 rounded-top" alt="">
                 </div>
-                <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Grains</div>
+                <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; right: 10px;">Ready to Cook</div>
                 <div class="p-4 rounded-bottom">
-                    <h4>Kodo Millet Grains</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                    <h4>Millet Vermicelli</h4>
+                    <p>Your favourite vermicelli now made with millets - loaded with nutrients</p>
                     <div class="d-flex justify-content-between flex-lg-wrap">
                         <!-- <p class="text-dark fs-5 fw-bold mb-0">$7.99 / kg</p> -->
                         <!-- <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a> -->
